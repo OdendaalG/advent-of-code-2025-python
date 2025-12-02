@@ -1,7 +1,7 @@
+from utils import read_input
+
 def day01_challenge1(verbose=False):
-    data = []
-    with open('./day01/input.txt') as f:
-        data = [str(line.strip()) for line in f]
+    data = read_input('day01')
 
     start = 50
     total = 0
@@ -62,9 +62,7 @@ def day01_challenge2(verbose = False):
     zero.setPrevious(previous_tick)
     previous_tick.setNext(zero)
 
-    data = []
-    with open('./day01/input.txt') as f:
-        data = [str(line.strip()) for line in f]
+    data = read_input('day01')
 
     total = 0
 
